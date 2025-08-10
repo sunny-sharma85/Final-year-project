@@ -1,0 +1,297 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Sofia Pro', sans-serif;
+    
+}
+body{
+    background-color: #edf7f1;
+}
+/* top section */
+.firstpart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   background-color: #1877f2;
+    color: white;
+    width: 100%;
+    padding: 10px 25px;
+}
+/* top-section */
+.icons{
+    display: flex;
+    gap: 10px;
+}
+.icons i{
+    font-size: 18px;
+    cursor: pointer;
+}
+.icons .fa-instagram{
+    color: rgba(225,48,108,1);
+}
+.icons .fa-facebook{
+    color:#1877f2;
+}
+.icons .fa-twitter{
+    color:#1da1f2;
+}
+/* nav-bar-contain-logo-links-button */
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5rem;
+    z-index: 1200;
+
+}
+/* navbar end here */
+
+/* wanderlust logo */
+.logo img{
+    width: 140px;
+    height: fit-content;
+    margin: 20px;
+ 
+
+}
+/* logo end */
+
+ .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin: 0px auto;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+}
+.links .active{
+    color:rgba(17,118,174,255);
+    cursor: pointer;
+}
+.links ul li a{
+    color:rgba(26,9,63,255);
+    font-size: 0.rem;
+    cursor:pointer;
+    margin: 0px 10px;
+    text-decoration: none;
+
+
+}
+.links a:hover{
+    color:rgba(17,118,174,255);
+    transition: 0.5s ease-out;
+}
+.view-tour button{
+    cursor: pointer;
+    padding: 17px 32px;
+   background:rgba(17,118,174,255);
+    color: white;
+    font-weight: 800;
+    border-radius: 50px;
+    
+    box-shadow: 0px 4px 10px rgba(14,118,174,1);
+    font-size: 15px;
+
+}
+main{
+    width: 100%;
+
+}
+/* image-and-text */
+.first-section{
+    
+    background-image: url(images/360_F_941096293_0azEV4VhghnAj9m3ZqKrkxYDaE4RxeTQ.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    height: 100vh;
+    position: relative; 
+  background-size: cover;
+
+   
+}
+/* end here */
+
+.first-section-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+}
+
+/* small span right */
+ .first-section-content  .top-content{
+    color:white;
+    font-size:1.5rem;
+}
+/* end here */
+
+/* big h1 right */
+.first-section-content .main-header h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+    
+
+}
+
+/* end here */
+
+.first-section-content .main-header .Header{
+     color:white;
+}
+/* right button */
+ .first-section-content .start-now .start-nows{
+    cursor: pointer;
+    padding: 16px 26px;
+   background:rgba(17,118,174,255);
+    color: white;
+    font-weight: 800;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(14,118,174,1);
+    font-size: 15px;
+    margin:10px 0px;
+}
+/* end here */
+
+/* right-paragraph */
+.first-section-content p{
+    font-size: 1rem;
+ 
+    
+}
+/* end here */
+/* card container */
+.card-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+gap: 1.5rem;
+    flex-wrap: wrap;
+}
+/* card container end here */
+
+/* main card*/
+.card{
+   
+    width:320px;
+    margin-top: 50px;
+     box-shadow: 0px 5px 8px 12px rgba(0,0,0,0.15);
+    
+     border-radius: 12px;
+    position: relative;
+}
+/* end here */
+
+
+ .card-content {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: black;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* card header */
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+.card-header h1{
+    color: rgba(17,118,174,255);;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* end here */
+.card img{
+    width:100%;
+    height:auto;
+    cursor: pointer;
+    border-radius: 12px;
+   
+  
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    animation: all 0.3 ease-in-out;
+
+    
+}
+.why-choose-us-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 45px;
+}
+.why-choose-us-header h1{
+    font-size: 2.5rem;
+    color: #1877f2;
+
+}
+.why-choose-us-header p{
+    line-height: 1.6rem;
+    font-size: 17px;
+    font-weight: 550;
+}
+.why-choose-us-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8.5rem;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+  .cards-why-choose{ 
+    cursor: pointer;
+
+ 
+  } 
+
+.cards-why-choose:hover{
+    transform: translateY(-5px);
+    transition: all 0.3 ease-in-out;
+    cursor:pointer;
+
+    
+}
+.cards-why-choose .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards-why-choose .icons i{
+    color: #1877f2;
+    font-size: 3rem;
+}
+.cards-why-choose .why-choose-content h1{
+    font-size: 2rem;
+    white-space: nowrap;
+    color:#1877f2;
+    text-align: center;
+}
+.cards-why-choose .why-choose-content p{
+    line-height: 1.6rem;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: normal;
+    text-align: center;
+
+
+}
