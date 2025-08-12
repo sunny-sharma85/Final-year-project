@@ -55,6 +55,9 @@
 
  <!-- nav bar -->
         <nav>
+          <div class="hamburger-menu">
+            <i class="ri-menu-line" id="hamburger"></i>
+          </div>
           <div class="logo">
             <img
               src="images/logo-removebg-preview(1).png"
@@ -62,7 +65,9 @@
             />
           </div>
           <div class="links">
+            <i class="ri-close-line" id="closeMenu"></i>
             <ul>
+               
               <li><a href="#" class="active"> Home </a></li>
               <li><a href="#">Contact Us </a></li>
               <li><a href="#">About Us</a></li>
@@ -70,7 +75,9 @@
               <li><a href="#">Tour Package </a></li>
               <li><a href="#">Blogs</a></li>
             </ul>
+           
           </div>
+
           <div class="view-tour">
             <button>View Tours</button>
           </div>
@@ -217,7 +224,8 @@
   </body>
 </html>
 <script>
-  const text = "WanderLust Adventure";
+
+  //  const text = "WanderLust Adventure";
   let i = 0;
   let isDeleting = false;
 
@@ -244,4 +252,25 @@
   }
 
   window.onload = typeEffect;
+
+
+
+const hamburger = document.getElementById('hamburger');
+const closeMenu = document.getElementById('closeMenu');
+const navLinks = document.querySelector('.links');
+
+// Open menu
+hamburger.addEventListener('click', () => {
+    navLinks.style.display = 'flex';  // or 'block' depending on your CSS
+    hamburger.style.display = 'none';
+    closeMenu.style.display = 'block';
+});
+
+// Close menu
+closeMenu.addEventListener('click', () => {
+    navLinks.style.display = 'none';
+    hamburger.style.display = 'block';
+    closeMenu.style.display = 'none';
+});
+
 </script>

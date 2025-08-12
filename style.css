@@ -44,11 +44,16 @@ nav{
     align-items: center;
     padding: 0px 5rem;
     z-index: 1200;
+    position: relative; 
 
 }
 /* navbar end here */
+nav .hamburger-menu {
+    display: none;
+}
 
 /* wanderlust logo */
+
 .logo img{
     width: 140px;
     height: fit-content;
@@ -58,16 +63,26 @@ nav{
 }
 /* logo end */
 
- .links {
+nav  .links {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
    
-    margin: 0px auto;
+    margin: 0px 0px;
 }
 .links ul{
     display: flex;
     list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+.links ul li{
+   
+    white-space: nowrap;
+}
+.links .ri-close-line{
+    display: none;
 }
 .links .active{
     color:rgba(17,118,174,255);
@@ -75,7 +90,7 @@ nav{
 }
 .links ul li a{
     color:rgba(26,9,63,255);
-    font-size: 0.rem;
+    font-size: 1rem;
     cursor:pointer;
     margin: 0px 10px;
     text-decoration: none;
@@ -256,7 +271,7 @@ gap: 1.5rem;
     justify-content: center;
     gap: 8.5rem;
     margin-top: 45px;
-    flex-wrap: wrap;
+    
 }
   .cards-why-choose{ 
     cursor: pointer;
@@ -295,4 +310,161 @@ gap: 1.5rem;
 
 
 }
+@media  (max-width: 1024px){
+    nav .view-tour button{
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    nav{
+        padding: 0px .5rem;
+
+    }
+    .links{
+        margin: 0px 5px;
+    }
+    .first-section-content{
+        flex-direction: column;
+    }
+    .first-section-content h1{
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    .card-header {
+        margin-top: 50px;
+    }
+    .card-header h1{
+        font-size: 2.0rem;
+        font-weight: 600;
+    }
+    .card-section .card{
+        width:250px;
+        margin-top: 30px;
+       
+
+
+
+        
+    }
+   
+    .why-choose-us-header h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+
+    }
+    .why-choose-us-container{
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+
+}
+@media (max-width: 768px){
+    .firstpart{
+        flex-direction: column;
+        padding: 0.5rem 0.6rem;
+       
+    }
+    .firstpart  span{
+        font-size: 0.9rem;
+        font-weight: 500;
+
+    }
+    .logo img{
+        width: 100%;
+        height: auto;
+        max-width: 110px;
+    }
+    
+   
+   
+
+    
+    nav .links{
+        display: none;
+    }
+    nav .links ul li a{
+      
+        margin-top: 25px;
+    }
+    nav .links ul {
+        
+        position: absolute;
+        left: 0;
+        top: 0;
+       width:250px;
+        background-color: rgba(255, 255, 255, 0.422);
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        height: 100vh;
+        backdrop-filter: blur(12px);
+       
+        
+    }
+    
+   nav .links li{
+    display: block;
+    width: 100%;
+   }
+   nav .links ul li a{
+    width: 100%;
+    display: block;
+    font-size: 1.5rem;
+
+   }
+    nav .logo{
+        
+    position: absolute;
+    left: 50%;
+    top:30%;
+    transform: translatex(-50% );
+}
+.view-tour button{
+    margin-top: 50px;
+    padding: 12px 23px;
+}
+ nav .hamburger-menu {
+    
+    display: inline-block;
+    margin-top: 50px;
+
+    
+}
+
+.hamburger-menu i{
+    color:#1877f2;
+    font-size: 2.0rem;
+}
+ nav .links .ri-close-line{
+     display: inline-block; 
+    position: absolute;
+    top: -8%;
+    left: 14rem;
+    font-size: 2.0rem;
+    color: #1877f2;
+    z-index: 999;
+}
+.first-section-content{
+    flex-direction: column;
+}
+.first-section-content .top-content {
+    font-size: 1rem;
+    font-weight: 500;
+}
+    .first-section-content .main-header h1{
+        font-size: 2rem;
+        font-weight: 500;
+       text-align: center;
+        
+    }
+    .first-section-content .main-header p{
+        line-height: 1.6;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+
+}
+    
 
